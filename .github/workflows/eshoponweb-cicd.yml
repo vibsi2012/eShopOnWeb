@@ -9,8 +9,7 @@ env:
   LOCATION: westus2
   TEMPLATE-FILE: infra/webapp.bicep
   SUBSCRIPTION-ID: 9664262e-2f0a-430a-8128-023332588698
-  WEBAPP-NAME: Labgithub_11-3-2026
-
+  WEBAPP-NAME: az400m03l08-sp1
 jobs:
   #Build, test and publish .net web project in repository
   buildandtest:
