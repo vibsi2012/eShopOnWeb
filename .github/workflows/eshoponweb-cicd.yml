@@ -10,6 +10,7 @@ env:
   TEMPLATE-FILE: infra/webapp.bicep
   SUBSCRIPTION-ID: 9664262e-2f0a-430a-8128-023332588698
   WEBAPP-NAME: az400m03l08vibsi
+  
 jobs:
   #Build, test and publish .net web project in repository
   buildandtest:
@@ -45,7 +46,7 @@ jobs:
         uses: actions/upload-artifact@v5
         with:
           name: bicep-template
-          path: ${{ env.TEMPLATE-FILE 
+          path: ${{ env.TEMPLATE-FILE }} 
         
  # Use Bicep to deploy infrastructure + Publish webapp
   deploy:
